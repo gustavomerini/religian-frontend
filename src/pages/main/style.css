@@ -1,0 +1,107 @@
+.teaching-list {
+  max-width: 700px;
+  margin: 20px auto 0;
+  pad: 0 20px;
+}
+
+.teaching-list article {
+  background: #fff;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  padding: 20px;
+  margin-bottom: 20px;
+  min-height: 6em;
+}
+
+.teaching-list article p {
+  font-size: 16px;
+  color: #999;
+  margin-top: 5px;
+  line-height: 24px;
+}
+
+.teaching-list article a {
+  height: 42px;
+  border-radius: 5px;
+  border: 2px solid #da552f;
+  background: none;
+  margin-top: 18px;
+  font-weight: bold;
+  font-size: 16px;
+  text-decoration: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.teaching-list article a:hover {
+  background: #da552f;
+  color: #fff;
+}
+
+.teaching-list .author {
+  position: inherit;
+  float: right;
+}
+
+.teaching-list .author-name p {
+  font-style: italic;
+  float: left;
+}
+
+/*  Items */
+.profile-picture {
+  grid-area: profile-picture;
+  grid-column-start: 5;
+  grid-column-end: 6;
+}
+.author-name {
+  grid-area: author-name;
+  grid-column-start: 6;
+  grid-column-end: 6;
+  padding-top: 0.6em;
+}
+
+.author-rank {
+  grid-area: author-rank;
+  grid-column-start: 6;
+  grid-column-end: 6;
+}
+
+.teaching-date {
+  grid-area: teaching-date;
+  grid-column-start: 1;
+  grid-column-end: 1;
+}
+
+/* Grid container */
+.teaching-list .teaching-footer {
+  display: grid;
+  grid-template-areas: "profile-picture profile-picture author-name author-name author-rank teaching-date";
+  grid-gap: 5px;
+  padding: 5px;
+}
+
+.grid-container > div {
+  text-align: center;
+  padding: 20px 0;
+}
+.profile-picture img {
+  float: right;
+  width: 75px;
+  height: 70px;
+  border-radius: 50%;
+}
+
+.teaching-list .teaching-footer  .author-rank p {
+  float: left;
+  padding: 2em 0em 0em 0em;
+  font-style: normal;
+  font-size: 13px;
+}
+
+
+.teaching-list .teaching-footer .teaching-date p {
+  font-size: 13px;
+  padding: 1em 0em 0em 0em;
+}
