@@ -7,6 +7,7 @@ export default class Main extends Component {
         teachings: [],
     }
 
+    baseUrl = 'https://religian-api.herokuapp.com';
     options = { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' };
 
     componentDidMount() {
@@ -36,7 +37,7 @@ export default class Main extends Component {
                             </div>
 
                             <div className="profile-picture">
-                                <img src="https://religian-api.herokuapp.com/uploads/9dcf82d514dc4976af8820840e9c759c.jpg" alt={`${teaching.author.about}`}></img>
+                                <img src={this.baseUrl+teaching.author.profilePicture.url} alt={`${teaching.author.about}`}></img>
                             </div>
 
                             <div className="author-name">
